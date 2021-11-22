@@ -90,8 +90,6 @@ function postnewcategories(data){
         headers:{
             "Content-Type":"application/json; charset=UTF-8",
             "X-API-Key":apikey,
-            "Access-Control-Allow-Headers":"X-API-Key",
-
         },
         body:Data,
         method:"POST"
