@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>src run mover</title>
+    <script src="script.js" defer></script>
+</head>
+<body style="background-color: aliceblue;">
+
+    <div style="background-color: rgb(233, 233, 233); border: 2px dotted #333; border-radius: 1rem; width: 70%; margin: 8rem auto;">
+        
+        <form id="sendform" style="display: flex; flex-direction: column; width: 80%; margin:5rem auto">
+            <label style="margin: 0 auto;" for="sendform">Move Category Runs</label>
+            <div style="display: flex; flex-direction: row; width: fit-content; margin:1rem  auto">
+                <label style="margin-right: 1rem;" for="wcategory" >Old Category: </label><input required type="text" placeholder="old category" id="wcategory">
+            </div>
+
+            <div style="display: flex; flex-direction: row; width: fit-content; margin:1rem  auto">
+                <label style="margin-right: 1rem;" for="wlevel" >Old Level: </label><input  type="text" placeholder="old level" id="wlevel">
+            </div>
+                
+            <div style="display: flex; flex-direction: row; width: fit-content; margin:1rem auto">
+                <label style="margin-right: 1rem;" for="wncategory" >New Category: </label><input required type="text" placeholder="new category" id="wncategory">
+            </div>
+
+            <div style="display: flex; flex-direction: row; width: fit-content; margin:1rem  auto">
+                <label style="margin-right: 1rem;" for="wnlevel" >New Level: </label><input  type="text" placeholder="new level" id="wnlevel">
+            </div>
+
+            <div style="display: flex; flex-direction: row; width: fit-content; margin:1rem  auto">
+                <label style="margin-right: 1rem;" for="apikey" >Api Key: </label><input autocomplete="off"  type="password" placeholder="Api key" id="apikey">
+            </div>
+
+            <button style="border: 2px dotted #333; border-radius: 1rem; padding:.5rem; width: 50%; margin: 0 auto;">Send</button>
+    
+        </form>
+    </div>
+
+</body>
+</html>
