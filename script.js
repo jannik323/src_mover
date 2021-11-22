@@ -28,6 +28,7 @@ sendformHTML.addEventListener("submit",(e)=>{
 function changecatjson(catjson){
     catjson.data.forEach(run => {
 
+        console.log(run)
         for(var name in run.values) {
             run.variables[name].value = run.values[name];
             run.variables[name].type = "pre-defined";
@@ -44,7 +45,9 @@ function changecatjson(catjson){
             run.splitsio = null
         }
         run.category = newcategory;
-        run.video = run.videos.links[0].uri;
+        if(run.videos){
+            run.video = run.videos.links[0].uri;
+        }
         run.times.realtime =run.times.realtime_t
         run.times.ingame =run.times.ingame_t
         run.times.realtime_noloads =run.times.realtime_noloads_t;
